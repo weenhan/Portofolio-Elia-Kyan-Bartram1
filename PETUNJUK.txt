@@ -1,0 +1,13 @@
+PORTOFOLIO ELIA - VERSI ROOT GITHUB
+
+PENTING: Semua file dalam ZIP ini memang harus berada langsung di halaman utama (root) repository GitHub. Tidak perlu membuat folder css, js, atau assets.
+
+Cara pasang:
+1. Ekstrak ZIP ini.
+2. Buka repository GitHub > Add file > Upload files.
+3. Pilih SEMUA file di dalam folder hasil ekstrak (Ctrl+A saat berada di dalam folder), lalu seret ke halaman upload GitHub.
+4. Pastikan file index.html, style.css, responsive.css, main.js, content.js, galaxy.js, dan semua .jpg terlihat bersama di halaman upload.
+5. Klik Commit changes.
+6. Tunggu GitHub Pages selesai deploy, lalu buka website dan tekan Ctrl+F5.
+
+Jangan unggah folder pembungkusnya. Semua file harus sejajar di root repository.

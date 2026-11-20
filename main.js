@@ -116,7 +116,7 @@
     });
   }
 
-  document.querySelectorAll("img[src^='assets/images/']").forEach((img) => {
+  document.querySelectorAll("img[src$='.jpg']").forEach((img) => {
     const key = img.getAttribute("src");
     loadPhoto(key).then((file) => {
       if (!file) return;
