@@ -1,0 +1,39 @@
+@media (max-width: 900px) {
+  :root { --page: min(100% - 44px, 760px); }
+  .desktop-nav { gap: 16px; }
+  .desktop-nav a { font-size: .62rem; }
+  .section-grid, .contact { grid-template-columns: 1fr; gap: 35px; }
+  .section-heading { grid-template-columns: 1fr 2fr; }
+  .section-heading > p { grid-column: 2; margin-top: 0; }
+}
+@media (max-width: 640px) {
+  :root { --page: calc(100% - 36px); }
+  .site-header { height: 70px; }
+  .desktop-nav { display: none; }
+  .menu-toggle { display: grid; gap: 5px; cursor: pointer; }
+  .menu-toggle span { display: block; width: 22px; height: 1px; background: var(--ink); }
+  .mobile-nav:not([hidden]) { display: flex; flex-direction: column; position: absolute; z-index: 9; top: 70px; left: 0; right: 0; padding: 18px 18px 24px; background: var(--paper); border-bottom: 1px solid var(--line); }
+  .mobile-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); font: .8rem var(--mono); text-transform: uppercase; }
+  .hero { padding-top: 58px; }
+  .hero h1 { margin: 30px 0 25px; font-size: clamp(3rem, 13vw, 5rem); }
+  .hero-bottom { align-items: flex-start; flex-direction: column; gap: 22px; margin-bottom: 30px; }
+  .hero-intro { max-width: 100%; }
+  .hero-image { height: 310px; }
+  .section-grid, .interests, .vision, .contact { padding-block: 76px; }
+  .about-copy { grid-template-columns: 1fr; gap: 14px; margin: 28px 0; }
+  .section-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 35px; }
+  .section-heading h2, .section-heading > p { grid-column: 1; }
+  .interest-grid { grid-template-columns: 1fr 1fr; gap: 30px 14px; }
+  .interest-large { grid-row: auto; grid-column: 1 / -1; }
+  .interest-large .card-image { height: 360px; }
+  .interest-card .card-image, .interest-wide .card-image { height: 210px; }
+  .interest-wide { grid-column: auto; }
+  .card-caption h3 { font-size: 1.35rem; }
+  .card-caption p { font-size: .72rem; }
+  .timeline-item { grid-template-columns: 36px 1fr; gap: 12px; }
+  .vision-layout { grid-template-columns: 1fr; gap: 30px; }
+  .vision-image { height: 330px; }
+  .values-row { justify-content: flex-start; column-gap: 22px; }
+  .site-footer { padding-block: 22px; flex-wrap: wrap; }
+  .site-footer > span:nth-child(2) { order: 3; width: 100%; }
+}
